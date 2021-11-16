@@ -1,0 +1,186 @@
+@import url(//db.onlinewebfonts.com/c/d14035f6b1afeabafbee4abb2ebf0fc6?family=COCOGOOSE);
+@import url("https://fonts.googleapis.com/css2?family=Inter&family=Lato&display=swap");
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box !important;
+  -moz-box-sizing: border-box !important;
+  -ms-box-sizing: border-box !important;
+  box-sizing: border-box !important;
+}
+
+.nav-bar {
+  position: absolute;
+  padding: 3vw 5vw 5vw 5vw;
+  left: 0;
+  top: 0;
+}
+
+.home-section {
+  background-image: url("../images/clouds.jpeg");
+  background-repeat: repeat;
+  background-position: 0 0;
+  background-size: 100% auto;
+  width: 100vw;
+  height: auto;
+}
+.home-section .home-section-content {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(247, 247, 247, 0.822);
+  padding: 22vw 5vw 15vw 5vw;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+.home-section .home-section-content h1 {
+  font-size: 30px;
+  line-height: 35px;
+}
+.home-section .home-section-content h1,
+.home-section .home-section-content .period {
+  font-family: "COCOGOOSE", sans-serif;
+}
+.home-section .home-section-content .period {
+  font-size: 22px;
+}
+.home-section .home-section-content h1,
+.home-section .home-section-content .greeting {
+  color: #ec5242;
+}
+.home-section .home-section-content p {
+  font-family: "Lato", sans-serif;
+}
+.home-section .home-section-content .description {
+  background-color: #f1f1f1;
+  border: 2px solid white;
+  padding: 4%;
+  font-size: 13px;
+}
+.home-section .home-section-content .location {
+  font-size: 14px;
+}
+
+.program-section {
+  background-color: #272a31;
+  display: flex;
+  flex-direction: column;
+  gap: 5vw;
+  padding: 10vw 5vw;
+  align-items: center;
+}
+.program-section h2 {
+  font-family: "Lato", sans-serif;
+  font-size: 18px;
+  color: white;
+}
+.program-section hr {
+  border-color: #ec5242;
+  width: 10%;
+}
+.program-section ul {
+  display: flex;
+  flex-direction: column;
+  gap: 5vw;
+  width: 100%;
+}
+.program-section ul li {
+  font-family: "Lato", sans-serif;
+  display: flex;
+  padding: 3vw;
+  background-color: rgba(255, 255, 255, 0.123);
+  gap: 2vw;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.program-section ul li .program-image {
+  min-width: 50px;
+  max-width: 50px;
+  height: 50px;
+  background-color: gray;
+}
+.program-section ul li h3 {
+  color: #ec5242;
+  max-width: 30%;
+  min-width: 30%;
+}
+.program-section ul li p {
+  color: white;
+  font-size: 13px;
+}
+.program-section #join {
+  color: white;
+  background-color: #ec5242;
+  width: 65vw;
+  height: 15vw;
+  font-family: "Lato", sans-serif;
+  font-size: 15px;
+  border-radius: none;
+  border: none;
+}
+
+.participants-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10vw 5vw;
+  gap: 10vw;
+  font-family: "Lato", sans-serif;
+}
+.participants-section .participants-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3vw;
+}
+.participants-section hr {
+  border-color: #ec5242;
+  width: 10%;
+}
+.participants-section ul {
+  display: flex;
+  flex-direction: column;
+  gap: 5vw;
+}
+.participants-section ul li {
+  display: grid;
+  grid-template-areas: "image name" "image profession" "image hr" "image description";
+  grid-column-gap: 5vw;
+  grid-row-gap: 1vw;
+}
+.participants-section ul li .participant-image {
+  grid-area: image;
+  background-color: cadetblue;
+  height: 80px;
+  min-width: 80px;
+  max-width: 80px;
+}
+.participants-section ul li .profession {
+  grid-area: profession;
+  color: #ec5242;
+  font-size: 11px;
+}
+.participants-section ul li hr {
+  border-color: gray;
+  grid-area: hr;
+  width: 5vw;
+}
+.participants-section ul li .description {
+  grid-area: description;
+  font-size: 10px;
+}
+.participants-section .more {
+  width: 100%;
+  height: 10vw;
+  background-color: white;
+  border: 1px solid gray;
+}
+.participants-section .more i {
+  color: #ec5242;
+}
+
+/*# sourceMappingURL=index.css.map */

@@ -1,0 +1,221 @@
+
+@import url(//db.onlinewebfonts.com/c/d14035f6b1afeabafbee4abb2ebf0fc6?family=COCOGOOSE);
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Lato&display=swap');
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box !important;
+  -moz-box-sizing: border-box !important;
+  -ms-box-sizing: border-box !important;
+  box-sizing: border-box !important;
+}
+
+$bg-image: url("../images/clouds.jpeg");
+$title-font-family: "COCOGOOSE", sans-serif;
+$text-font-family: 'Lato', sans-serif;
+$orange: #ec5242;
+$dark: #272a31;
+
+.nav-bar {
+  position: absolute;
+  padding: 3vw 5vw 5vw 5vw;
+  left: 0;
+  top: 0;
+}
+
+.home-section {
+  background-image: $bg-image;
+  background-repeat: repeat;
+  background-position: 0 0;
+  background-size: 100% auto;
+  width: 100vw;
+  height: auto;
+
+  .home-section-content {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(247, 247, 247, 0.822);
+    padding: 22vw 5vw 15vw 5vw;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    flex-wrap: wrap;
+
+    h1 {
+      font-size: 30px;
+      line-height: 35px;
+    }
+  
+    h1,
+    .period {
+      font-family: $title-font-family;
+    }
+
+    .period {
+      font-size: 22px;
+    }
+  
+    h1,
+    .greeting {
+      color: $orange;
+    }
+  
+    p {
+      font-family: $text-font-family;
+    }
+  
+    .description {
+      background-color: rgb(241, 241, 241);
+      border: 2px solid white;
+      padding: 4%;
+      font-size: 13px;
+    }
+
+    .location {
+      font-size: 14px;
+    }
+  }
+}
+
+.program-section {
+  background-color: $dark;
+  display: flex;
+  flex-direction: column;
+  gap: 5vw;
+  padding: 10vw 5vw;
+  align-items: center;
+
+  h2 {
+    font-family: $text-font-family;
+    font-size: 18px;
+    color: white;
+  }
+
+  hr {
+    border-color: $orange;
+    width: 10%;
+  }
+
+  ul {
+    display: flex;
+    flex-direction: column;
+    gap: 5vw;
+    width: 100%;
+    li {
+      font-family: $text-font-family;
+      display: flex;
+      padding: 3vw;
+      background-color: rgba(255, 255, 255, 0.123);
+      gap: 2vw;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      
+      .program-image {
+        min-width: 50px;
+        max-width: 50px;
+        height: 50px;
+        background-color: gray;
+      }
+
+      h3 {
+        color: $orange;
+        max-width: 30%;
+        min-width: 30%;
+      }
+
+      p {
+        color: white;
+        font-size: 13px;
+      }
+    }
+  }
+
+  #join {
+    color: white;
+    background-color: $orange;
+    width: 65vw;
+    height: 15vw;
+    font-family: $text-font-family;
+    font-size: 15px;
+    border-radius: none;
+    border: none;
+  }
+}
+
+.participants-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10vw 5vw;
+  gap: 10vw;
+  font-family: $text-font-family;
+
+  .participants-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3vw;
+  }
+
+  hr {
+    border-color: $orange;
+    width: 10%;
+  }
+
+  ul {
+    display: flex;
+    flex-direction: column;
+    gap: 5vw;
+    li {
+      display: grid;
+      grid-template-areas: 
+        'image name'
+        'image profession'
+        'image hr'
+        'image description';
+      grid-column-gap: 5vw;
+      grid-row-gap: 1vw;
+
+      .participant-image {
+        grid-area: image;
+        background-color: cadetblue;
+        height: 80px;
+        min-width: 80px;
+        max-width: 80px;
+      }
+
+      .profession {
+        grid-area: profession;
+        color: $orange;
+        font-size: 11px;
+      }
+
+      hr {
+        border-color: gray;
+        grid-area: hr;
+        width: 5vw;
+      }
+
+      .description {
+        grid-area: description;
+        font-size: 10px;
+      }
+      
+    }
+  }
+
+  .more {
+    width: 100%;
+    height: 10vw;
+    background-color: white;
+    border: 1px solid gray;
+
+    i {
+      color: $orange;
+    }
+  }
+}
