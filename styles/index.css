@@ -17,6 +17,45 @@
   left: 0;
   top: 0;
 }
+.nav-bar .nav-desktop {
+  display: none;
+  font-family: "Lato", sans-serif;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  padding: 8vw;
+  background-color: #272a31;
+}
+.nav-bar .nav-desktop ul {
+  list-style-type: none;
+}
+.nav-bar .nav-desktop ul li a {
+  text-decoration: none;
+  color: white;
+}
+.nav-bar .nav-desktop .close-button {
+  color: white;
+  font-size: 40px;
+}
+.nav-bar .nav-desktop .upper-panel {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3vw;
+  justify-content: flex-end;
+}
+.nav-bar .nav-desktop .nav-panel {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.nav-bar .nav-desktop .nav-panel li img {
+  display: none;
+}
+.nav-bar .nav-desktop .nav-panel li a {
+  font-size: 35px;
+}
 
 .home-section {
   background-image: url("../images/clouds.jpeg");
@@ -195,15 +234,30 @@
     width: 100vw;
     font-size: 12px;
   }
+  .nav-bar .close-button {
+    display: none;
+  }
   .nav-bar .nav-mobile {
     display: none;
   }
+  .nav-bar .nav-desktop {
+    display: block;
+    font-family: "Lato", sans-serif;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: auto;
+    padding: 0;
+  }
   .nav-bar .nav-desktop .small-logo {
     height: 50px;
+    display: inline-block;
   }
   .nav-bar .nav-desktop ul {
     list-style-type: none;
     display: flex;
+    flex-direction: row;
     width: 100%;
   }
   .nav-bar .nav-desktop ul li a {
@@ -221,6 +275,7 @@
     color: white;
   }
   .nav-bar .nav-desktop .nav-panel {
+    flex-direction: row;
     background-color: white;
     padding-right: 12vw;
     padding-left: 12vw;
@@ -228,6 +283,7 @@
     align-items: center;
   }
   .nav-bar .nav-desktop .nav-panel li img {
+    display: inline-block;
     margin-right: 15vw;
   }
   .nav-bar .nav-desktop .nav-panel li a {
@@ -238,10 +294,11 @@
     color: #ec5242;
   }
   .nav-bar .nav-desktop .nav-panel li:last-child {
-    border: 4px solid #ec5242;
-    padding: 0.6vw;
+    min-width: 115px;
   }
   .nav-bar .nav-desktop .nav-panel li:last-child a {
+    border: 4px solid #ec5242;
+    padding: 0.6vw;
     color: #ec5242;
   }
 
