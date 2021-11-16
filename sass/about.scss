@@ -1,0 +1,226 @@
+@import url(//db.onlinewebfonts.com/c/d14035f6b1afeabafbee4abb2ebf0fc6?family=COCOGOOSE);
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Lato&display=swap');
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box !important;
+  -moz-box-sizing: border-box !important;
+  -ms-box-sizing: border-box !important;
+  box-sizing: border-box !important;
+}
+
+$bg-image: url("../images/clouds.jpeg");
+$title-font-family: "COCOGOOSE", sans-serif;
+$text-font-family: 'Lato', sans-serif;
+$orange: #ec5242;
+$dark: #272a31;
+$gray-border: rgb(228, 228, 228);
+
+.nav-bar {
+  position: absolute;
+  padding: 3vw 5vw 5vw 5vw;
+  left: 0;
+  top: 0;
+}
+
+.home-section {
+  background-image: $bg-image;
+  background-repeat: repeat;
+  background-position: 0 0;
+  background-size: 100% auto;
+  width: 100vw;
+  height: auto;
+
+  .home-section-content {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(247, 247, 247, 0.822);
+    padding: 22vw 5vw 15vw 5vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+
+    h1 {
+      font-size: 28px;
+      line-height: 35px;
+      text-align: center;
+      font-family: $title-font-family;
+    }
+  
+    h1,
+    .greeting {
+      color: $orange;
+    }
+  
+    p {
+      font-family: $text-font-family;
+      text-align: center;
+    }
+  
+    .description {
+      background-color: white;
+      border: 1px solid $gray-border;
+      padding: 4%;
+      font-size: 13px;
+    }
+
+    .contact {
+      font-size: 13px;
+      a {
+        color: black;
+      }
+    }
+  }
+}
+
+@mixin title() {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3vw;
+
+  hr {
+    width: 10%;
+    border-color: $orange;
+  }
+}
+
+.logo-section {
+  width: 100vw;
+  padding: 10vw 5vw;
+  font-family: $text-font-family;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 7vw;
+  border-bottom: 1px solid $gray-border;
+  
+  .logo-title {
+    @include title;
+  }
+
+  p {
+    font-size: 13px;
+    width: 87%;
+  }
+
+  img {
+    width: 100%;
+    border: 1px solid $gray-border;
+  }
+}
+
+.past-events-section {
+  width: 100vw;
+  padding: 10vw;
+  font-family: $text-font-family;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 7vw;
+
+  .past-events-title {
+    @include title;
+    width: 90%;
+  }
+
+  #event-2013 {
+    background-image: url("../images/past-event-1.jpeg");
+  }
+
+  #event-2011 {
+    background-image: url("../images/past-event-2.jpeg");
+  }
+
+  .picture-past {
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: 100% auto;
+    width: 100%;
+    height: 170px;
+    text-decoration: none;
+    color: #fff;
+
+    div {
+      background-color: rgba(165, 42, 42, 0.692);
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+
+      .event-year {
+        font-size: 25px;
+      }
+
+      .event-description {
+        font-size: 13px;
+      }
+    }
+  }
+}
+
+.partners-section {
+  width: 100vw;
+  padding: 10vw;
+  font-family: $text-font-family;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 7vw;
+
+  background-color: rgb(88, 88, 88);
+
+
+  .partners-title {
+    @include title;
+    width: auto;
+    color: white;
+
+    hr {
+      width: 40%;
+    }
+  }
+
+  .logos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    column-gap: 5%;
+    row-gap: 20px;
+    img {
+      width: 30%;
+      height:fit-content;
+    }
+  }
+}
+
+footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 5vw;
+  font-family: $text-font-family;
+
+  img {
+    width: 100%;
+    align-self: center;
+  }
+
+  p {
+    font-size: 10px;
+    justify-self: center;
+    align-self: center;
+  }
+}
