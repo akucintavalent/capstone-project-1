@@ -39,6 +39,11 @@
 .home-section .home-section-content h1 {
   font-size: 30px;
   line-height: 35px;
+  background-image: url("../images/red-background-for-text.jpeg");
+  background-size: cover;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
 }
 .home-section .home-section-content h1,
 .home-section .home-section-content .period {
@@ -47,7 +52,6 @@
 .home-section .home-section-content .period {
   font-size: 22px;
 }
-.home-section .home-section-content h1,
 .home-section .home-section-content .greeting {
   color: #ec5242;
 }
@@ -182,3 +186,87 @@
 .participants-section .more i {
   color: #ec5242;
 }
+
+@media (min-width: 768px) {
+  .nav-bar {
+    display: block;
+    font-family: "Lato", sans-serif;
+    padding: 0;
+    width: 100vw;
+    font-size: 12px;
+  }
+  .nav-bar .nav-mobile {
+    display: none;
+  }
+  .nav-bar .nav-desktop .small-logo {
+    height: 50px;
+  }
+  .nav-bar .nav-desktop ul {
+    list-style-type: none;
+    display: flex;
+    width: 100%;
+  }
+  .nav-bar .nav-desktop ul li a {
+    text-decoration: none;
+  }
+  .nav-bar .nav-desktop .upper-panel {
+    background: linear-gradient(#363636, #505050);
+    padding-right: 12vw;
+    justify-content: flex-end;
+    gap: 1.5vw;
+    padding-top: 0.5vw;
+    padding-bottom: 0.5vw;
+  }
+  .nav-bar .nav-desktop .upper-panel li a {
+    color: white;
+  }
+  .nav-bar .nav-desktop .nav-panel {
+    background-color: white;
+    padding-right: 12vw;
+    padding-left: 12vw;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .nav-bar .nav-desktop .nav-panel li img {
+    margin-right: 15vw;
+  }
+  .nav-bar .nav-desktop .nav-panel li a {
+    color: black;
+    font-size: 15px;
+  }
+  .nav-bar .nav-desktop .nav-panel li:nth-child(2) a {
+    color: #ec5242;
+  }
+  .nav-bar .nav-desktop .nav-panel li:last-child {
+    border: 4px solid #ec5242;
+    padding: 0.6vw;
+  }
+  .nav-bar .nav-desktop .nav-panel li:last-child a {
+    color: #ec5242;
+  }
+
+  .home-section .home-section-content {
+    padding: 12vw;
+    padding-top: 14vw;
+  }
+  .home-section .home-section-content .greeting {
+    font-size: 50px;
+  }
+  .home-section .home-section-content h1 {
+    font-size: 70px;
+    line-height: 80px;
+  }
+  .home-section .home-section-content .description {
+    width: 50vw;
+    padding: 2vw;
+    font-size: 15px;
+  }
+  .home-section .home-section-content .period {
+    font-size: 35px;
+  }
+  .home-section .home-section-content .location {
+    font-size: 23px;
+  }
+}
+
+/*# sourceMappingURL=index.css.map */

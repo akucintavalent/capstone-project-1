@@ -47,6 +47,11 @@ $dark: #272a31;
     h1 {
       font-size: 30px;
       line-height: 35px;
+      background-image: url("../images/red-background-for-text.jpeg");
+      background-size: cover;
+      background-clip: text;
+      -webkit-background-clip: text;
+      color: transparent;
     }
   
     h1,
@@ -58,7 +63,6 @@ $dark: #272a31;
       font-size: 22px;
     }
   
-    h1,
     .greeting {
       color: $orange;
     }
@@ -218,4 +222,117 @@ $dark: #272a31;
       color: $orange;
     }
   }
+}
+
+
+@media (min-width: 768px) {
+  .nav-bar {
+    display: block;
+    font-family: $text-font-family;
+    padding: 0;
+    width: 100vw;
+    font-size: 12px;
+
+    .nav-mobile {
+      display: none;
+    }
+
+    .nav-desktop {
+      .small-logo {
+        height: 50px;
+      }
+
+      ul {
+        list-style-type: none;
+        display: flex;
+        width: 100%;
+
+        li {
+          a {
+            text-decoration: none;
+          }
+        }
+      }
+
+      .upper-panel {
+        background: linear-gradient(rgb(54, 54, 54), rgb(80, 80, 80));
+        padding-right: 12vw;
+        justify-content: flex-end;
+        gap: 1.5vw;
+        padding-top: 0.5vw;
+        padding-bottom: 0.5vw;
+
+        li {
+          a {
+            color: white;
+          }
+        }
+        
+      }
+
+      .nav-panel {
+        background-color: white;
+        padding-right: 12vw;
+        padding-left: 12vw;
+        justify-content: space-between;
+        align-items: center;
+
+        li {
+          img {
+            margin-right: 15vw;
+          }
+
+          a {
+            color: black;
+            font-size: 15px;
+          }
+        }
+
+        li:nth-child(2) {
+          a {
+            color: $orange;
+          }
+        }
+
+        li:last-child {
+          border: 4px solid $orange;
+          padding: 0.6vw;
+
+          a {
+            color: $orange;
+          }
+        }
+      }
+    }
+  }
+
+  .home-section {
+    .home-section-content {
+      padding: 12vw;
+      padding-top: 14vw;
+      .greeting {
+        font-size: 50px;
+      }
+  
+      h1 {
+        font-size: 70px;
+        line-height: 80px;
+      }
+
+      .description {
+        width: 50vw;
+        padding: 2vw;
+        font-size: 15px;
+      }
+
+      .period {
+        font-size: 35px;
+      }
+
+      .location {
+        font-size: 23px;
+      }
+    }
+  }
+  
 }
