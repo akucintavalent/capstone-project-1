@@ -18,6 +18,9 @@ $title-font-family: "COCOGOOSE", sans-serif;
 $text-font-family: 'Lato', sans-serif;
 $orange: #ec5242;
 $dark: #272a31;
+$small-title-desktop-font-size: 30px;
+$gray-border: rgb(228, 228, 228);
+
 
 .nav-bar {
   position: absolute;
@@ -142,15 +145,22 @@ $dark: #272a31;
   padding: 10vw 5vw;
   align-items: center;
 
-  h2 {
-    font-family: $text-font-family;
-    font-size: 18px;
-    color: white;
-  }
+  .program-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3vw;
 
-  hr {
-    border-color: $orange;
-    width: 10%;
+    h2 {
+      font-family: $text-font-family;
+      font-size: 18px;
+      color: white;
+    }
+  
+    hr {
+      border-color: $orange;
+      width: 3vw;
+    }
   }
 
   ul {
@@ -198,6 +208,10 @@ $dark: #272a31;
     border-radius: none;
     border: none;
   }
+
+  .see-whole {
+    display: none;
+  }
 }
 
 .participants-section {
@@ -233,6 +247,10 @@ $dark: #272a31;
         'image description';
       grid-column-gap: 5vw;
       grid-row-gap: 1vw;
+
+      h3 {
+        grid-area: name;
+      }
 
       .participant-image {
         grid-area: image;
@@ -274,6 +292,13 @@ $dark: #272a31;
   }
 }
 
+.partners-section {
+  display: none;
+}
+
+footer {
+  display: none;
+}
 
 @media (min-width: 768px) {
   .nav-bar {
@@ -403,4 +428,150 @@ $dark: #272a31;
     }
   }
   
+  .program-section {
+    padding: 5vw;
+
+    .program-title {
+      gap: 1vw;
+
+      h2 {
+        font-size: $small-title-desktop-font-size;
+      }
+    }
+
+    ul {
+      flex-direction: row;
+      flex-wrap: wrap;
+      gap: 4px;
+      width: auto;
+
+      li {
+        flex-direction: column;
+        width: 15vw;
+        gap: 2px;
+        padding: 15px;
+        text-align: center;
+
+        h3 {
+          max-width: none;
+          min-width: none;
+          width: auto;
+        }
+      }
+    }
+
+    #join {
+      display: none;
+    }
+
+    .see-whole {
+      display: initial;
+      color: rgb(202, 202, 202);
+    }
+  }
+
+  .participants-section {
+    padding: 5vw 15vw;
+    gap: 5vw;
+
+    .participants-title {
+      gap: 1vw;
+
+      h2 {
+        font-size: $small-title-desktop-font-size;
+      }
+    }
+
+
+    ul {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      row-gap: 4vw;
+      column-gap: 1vw;
+
+      li {
+        column-gap: 2vw;
+        .participant-image {
+          height: 130px;
+          min-width: 130px;
+          max-width: 130px;
+        }
+
+        h3 {
+          font-size: 22px;
+        }
+
+        .profession,
+        .description {
+          font-size: 15px;
+        }
+      }
+    }
+
+    .more {
+      display: none;
+    }
+  }
+
+
+  .partners-section {
+    width: 100vw;
+    padding: 4vw;
+    font-family: $text-font-family;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3vw;
+    background-color: rgb(88, 88, 88);
+  
+  
+    .partners-title {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 1vw;
+
+      h2 {
+        font-size: $small-title-desktop-font-size;
+        color: white;
+      }
+
+      hr {
+        border: 1px solid $orange;
+        width: 50%;
+      }
+    }
+  
+    .logos {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      column-gap: 5%;
+      row-gap: 20px;
+      img {
+        width: 10%;
+        height:fit-content;
+      }
+    }
+  }
+
+  footer {
+    padding: 5vw 12vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 3vw;
+
+    img {
+      height: fit-content;
+      width: 30%;
+    }
+
+    p {
+      font-size: 13px;
+    }
+  }
 }
