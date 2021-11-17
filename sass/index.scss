@@ -23,6 +23,7 @@ $gray-border: rgb(228, 228, 228);
 
 
 .nav-bar {
+  z-index: 2;
   position: absolute;
   padding: 3vw 5vw 5vw 5vw;
   left: 0;
@@ -80,12 +81,55 @@ $gray-border: rgb(228, 228, 228);
 }
 
 .home-section {
+  z-index: 1;
+  position: relative;
   background-image: $bg-image;
   background-repeat: repeat;
   background-position: 0 0;
   background-size: 100% auto;
   width: 100vw;
   height: auto;
+
+  .large-circle {
+    z-index: 3;
+    position: absolute;
+    left: 60%;
+    top: 15%;
+    width: 100px;
+    height: 100px;
+    background-image: url("../images/large-bg-cross.png");
+    background-repeat: repeat;
+    background-position: 0 0;
+    background-size: 25% 25%;
+    border-radius: 50%;
+  }
+
+  .zero {
+    position: absolute;
+    right: 5%;
+    top: 20%;
+  }
+
+  .money {
+    position: absolute;
+    left: 5%;
+    bottom: 35%;
+    width: 60px;
+  }
+
+  .chess-plane {
+    position: absolute;
+    right: 10%;
+    top: 60%;
+    width: 120px;
+  }
+
+  .cross {
+    position: absolute;
+    right: 3%;
+    top: 50%;
+    width: 80px;
+  }
 
   .home-section-content {
     width: 100%;
@@ -125,6 +169,7 @@ $gray-border: rgb(228, 228, 228);
     }
   
     .description {
+      z-index: 4;
       background-color: rgb(241, 241, 241);
       border: 2px solid white;
       padding: 4%;
