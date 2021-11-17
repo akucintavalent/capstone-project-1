@@ -13,6 +13,10 @@
   box-sizing: border-box !important;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 $bg-image: url("../images/clouds.jpeg");
 $title-font-family: "COCOGOOSE", sans-serif;
 $text-font-family: 'Lato', sans-serif;
@@ -105,12 +109,14 @@ $gray-border: rgb(228, 228, 228);
   }
 
   .zero {
+    z-index: 2;
     position: absolute;
     right: 5%;
-    top: 20%;
+    top: 30%;
   }
 
   .money {
+    z-index: 3;
     position: absolute;
     left: 5%;
     bottom: 35%;
@@ -118,6 +124,7 @@ $gray-border: rgb(228, 228, 228);
   }
 
   .chess-plane {
+    z-index: 3;
     position: absolute;
     right: 10%;
     top: 60%;
@@ -125,6 +132,7 @@ $gray-border: rgb(228, 228, 228);
   }
 
   .cross {
+    z-index: 3;
     position: absolute;
     right: 3%;
     top: 50%;
@@ -142,6 +150,7 @@ $gray-border: rgb(228, 228, 228);
     flex-wrap: wrap;
 
     h1 {
+      z-index: 4;
       font-size: 30px;
       line-height: 35px;
       background-image: url("../images/red-background-for-text.jpeg");
@@ -157,10 +166,12 @@ $gray-border: rgb(228, 228, 228);
     }
 
     .period {
+      z-index: 4;
       font-size: 22px;
     }
   
     .greeting {
+      z-index: 4;
       color: $orange;
     }
   
@@ -177,6 +188,7 @@ $gray-border: rgb(228, 228, 228);
     }
 
     .location {
+      z-index: 4;
       font-size: 14px;
     }
   }

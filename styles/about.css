@@ -11,6 +11,10 @@
   box-sizing: border-box !important;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 .nav-bar {
   position: absolute;
   padding: 3vw 5vw 5vw 5vw;
@@ -62,6 +66,40 @@
   width: 100vw;
   height: auto;
 }
+.home-section .large-circle {
+  z-index: 1;
+  position: absolute;
+  left: 60%;
+  top: 15%;
+  width: 100px;
+  height: 100px;
+  background-image: url("../images/large-bg-cross.png");
+  background-repeat: repeat;
+  background-position: 0 0;
+  background-size: 25% 25%;
+  border-radius: 50%;
+}
+.home-section .red-circle {
+  z-index: 1;
+  position: absolute;
+  left: 30%;
+  top: 15%;
+  width: 100px;
+}
+.home-section .silver-circle-1 {
+  z-index: 1;
+  position: absolute;
+  left: 15%;
+  top: 30%;
+  width: 80px;
+}
+.home-section .silver-circle-2 {
+  z-index: 1;
+  position: absolute;
+  left: 80%;
+  top: 40%;
+  width: 130px;
+}
 .home-section .home-section-content {
   width: 100%;
   height: 100%;
@@ -74,6 +112,7 @@
   flex-wrap: wrap;
 }
 .home-section .home-section-content h1 {
+  z-index: 2;
   font-size: 28px;
   line-height: 35px;
   text-align: center;
@@ -91,6 +130,7 @@
   text-align: center;
 }
 .home-section .home-section-content .description {
+  z-index: 2;
   background-color: white;
   border: 1px solid #e4e4e4;
   padding: 4%;

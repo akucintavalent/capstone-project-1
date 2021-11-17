@@ -12,6 +12,10 @@
   box-sizing: border-box !important;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 $title-font-family: "COCOGOOSE", sans-serif;
 $text-font-family: 'Lato', sans-serif;
 $orange: #ec5242;
@@ -80,6 +84,44 @@ $gray-border: rgb(228, 228, 228);
   width: 100vw;
   height: auto;
 
+  .large-circle {
+    z-index: 1;
+    position: absolute;
+    left: 60%;
+    top: 15%;
+    width: 100px;
+    height: 100px;
+    background-image: url("../images/large-bg-cross.png");
+    background-repeat: repeat;
+    background-position: 0 0;
+    background-size: 25% 25%;
+    border-radius: 50%;
+  }
+
+  .red-circle {
+    z-index: 1;
+    position: absolute;
+    left: 30%;
+    top: 15%;
+    width: 100px;
+  }
+
+  .silver-circle-1 {
+    z-index: 1;
+    position: absolute;
+    left: 15%;
+    top: 30%;
+    width: 80px;
+  }
+
+  .silver-circle-2 {
+    z-index: 1;
+    position: absolute;
+    left: 80%;
+    top: 40%;
+    width: 130px;
+  }
+
   .home-section-content {
     width: 100%;
     height: 100%;
@@ -92,6 +134,7 @@ $gray-border: rgb(228, 228, 228);
     flex-wrap: wrap;
 
     h1 {
+      z-index: 2;
       font-size: 28px;
       line-height: 35px;
       text-align: center;
@@ -113,6 +156,7 @@ $gray-border: rgb(228, 228, 228);
     }
   
     .description {
+      z-index: 2;
       background-color: white;
       border: 1px solid $gray-border;
       padding: 4%;

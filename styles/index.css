@@ -11,6 +11,10 @@
   box-sizing: border-box !important;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 .nav-bar {
   z-index: 2;
   position: absolute;
@@ -82,23 +86,27 @@
   border-radius: 50%;
 }
 .home-section .zero {
+  z-index: 2;
   position: absolute;
   right: 5%;
-  top: 20%;
+  top: 30%;
 }
 .home-section .money {
+  z-index: 3;
   position: absolute;
   left: 5%;
   bottom: 35%;
   width: 60px;
 }
 .home-section .chess-plane {
+  z-index: 3;
   position: absolute;
   right: 10%;
   top: 60%;
   width: 120px;
 }
 .home-section .cross {
+  z-index: 3;
   position: absolute;
   right: 3%;
   top: 50%;
@@ -115,6 +123,7 @@
   flex-wrap: wrap;
 }
 .home-section .home-section-content h1 {
+  z-index: 4;
   font-size: 30px;
   line-height: 35px;
   background-image: url("../images/red-background-for-text.jpeg");
@@ -128,9 +137,11 @@
   font-family: "COCOGOOSE", sans-serif;
 }
 .home-section .home-section-content .period {
+  z-index: 4;
   font-size: 22px;
 }
 .home-section .home-section-content .greeting {
+  z-index: 4;
   color: #ec5242;
 }
 .home-section .home-section-content p {
@@ -144,6 +155,7 @@
   font-size: 13px;
 }
 .home-section .home-section-content .location {
+  z-index: 4;
   font-size: 14px;
 }
 
