@@ -12,7 +12,6 @@
   box-sizing: border-box !important;
 }
 
-$bg-image: url("../images/clouds.jpeg");
 $title-font-family: "COCOGOOSE", sans-serif;
 $text-font-family: 'Lato', sans-serif;
 $orange: #ec5242;
@@ -24,13 +23,60 @@ $gray-border: rgb(228, 228, 228);
   padding: 3vw 5vw 5vw 5vw;
   left: 0;
   top: 0;
+
+  .nav-desktop {
+    display: none;
+    font-family: $text-font-family;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    padding: 8vw;
+    background-color: $dark;
+
+    ul {
+      list-style-type: none;
+
+      li {
+        a {
+          text-decoration: none;
+          color: white;
+        }
+      }
+    }
+
+    .close-button {
+      color: white;
+      font-size: 40px;
+    }
+
+    .upper-panel {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 3vw;
+      justify-content: flex-end;
+    }
+
+    .nav-panel {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      li {
+        img {
+          display: none;
+        }
+
+        a {
+          font-size: 35px;
+        }
+      }
+    }
+  }
 }
 
 .home-section {
-  background-image: $bg-image;
-  background-repeat: repeat;
-  background-position: 0 0;
-  background-size: 100% auto;
+  background: rgb(245, 245, 245);
   width: 100vw;
   height: auto;
 
@@ -51,6 +97,10 @@ $gray-border: rgb(228, 228, 228);
       text-align: center;
       font-family: $title-font-family;
     }
+
+    hr {
+      display: none;
+    }
   
     h1,
     .greeting {
@@ -67,6 +117,10 @@ $gray-border: rgb(228, 228, 228);
       border: 1px solid $gray-border;
       padding: 4%;
       font-size: 13px;
+
+      span {
+        display: none;
+      }
     }
 
     .contact {
@@ -109,6 +163,10 @@ $gray-border: rgb(228, 228, 228);
   p {
     font-size: 13px;
     width: 87%;
+
+    span {
+      display: none;
+    }
   }
 
   img {
@@ -145,7 +203,7 @@ $gray-border: rgb(228, 228, 228);
     background-position: top center;
     background-size: 100% auto;
     width: 100%;
-    height: 170px;
+    height: 35vw;
     text-decoration: none;
     color: #fff;
 
@@ -161,6 +219,7 @@ $gray-border: rgb(228, 228, 228);
 
       .event-year {
         font-size: 25px;
+        font-weight: bold;
       }
 
       .event-description {
@@ -222,5 +281,246 @@ footer {
     font-size: 10px;
     justify-self: center;
     align-self: center;
+
+    span {
+      display: none;
+    }
+  }
+}
+
+
+@media (min-width: 768px) {
+  .nav-bar {
+    display: block;
+    font-family: $text-font-family;
+    padding: 0;
+    width: 100vw;
+    font-size: 12px;
+
+    .close-button {
+      display: none;
+    }
+
+    .nav-mobile {
+      display: none;
+    }
+
+    .nav-desktop {
+      display: block;
+      font-family: $text-font-family;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: auto;
+      padding: 0;
+
+
+      .small-logo {
+        height: 50px;
+        display: inline-block;
+      }
+
+      ul {
+        list-style-type: none;
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+
+        li {
+          a {
+            text-decoration: none;
+          }
+        }
+      }
+
+      .upper-panel {
+        background: linear-gradient(rgb(54, 54, 54), rgb(80, 80, 80));
+        padding-right: 12vw;
+        justify-content: flex-end;
+        gap: 1.5vw;
+        padding-top: 0.5vw;
+        padding-bottom: 0.5vw;
+
+        li {
+          a {
+            color: white;
+          }
+        }
+        
+      }
+
+      .nav-panel {
+        flex-direction: row;
+        background-color: white;
+        padding-right: 12vw;
+        padding-left: 12vw;
+        justify-content: space-between;
+        align-items: center;
+
+        li {
+          img {
+            display: inline-block;
+            margin-right: 15vw;
+          }
+
+          a {
+            color: black;
+            font-size: 15px;
+          }
+        }
+
+        li:nth-child(2) {
+          a {
+            color: $orange;
+          }
+        }
+
+        li:last-child {
+          min-width: 115px;
+          a {
+            border: 4px solid $orange;
+            padding: 0.6vw;
+            color: $orange;
+          }
+        }
+      }
+    }
+  }
+
+  .home-section {  
+    .home-section-content {
+      padding: 15vw 15vw 8vw 15vw;
+      gap: 3vw;
+
+      h1 {
+        font-size: 55px;
+        line-height: 60px;
+      }
+
+      hr {
+        display: block;
+        border: 1px solid $orange;
+        width: 2vw;
+      }
+    
+      .greeting {
+        display: none;
+      }
+    
+      .description {
+        padding: 2vw 4vw;
+        font-size: 16px;
+
+        span {
+          display: initial;
+        }
+      }
+  
+      .contact {
+        font-size: 16px;
+        a {
+          color: black;
+          font-weight: bold;
+        }
+      }
+    }
+  }
+
+  .logo-section {
+    padding: 5vw 10vw;
+    gap: 4vw;
+    
+    .logo-title {
+      @include title;
+      gap: 1vw;
+
+      hr {
+        width: 2vw;
+      }
+    }
+  
+    p {
+      font-size: 16px;
+      width:  auto;
+
+      span {
+        display: initial;
+      }
+    }
+  
+    img {
+      width: 55%;
+    }
+  }
+
+  .past-events-section {
+    padding: 5vw 20vw;
+    row-gap: 4vw;
+    column-gap: 1vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  
+    .past-events-title {
+      grid-column-start: 1;
+      grid-column-end: 3;
+      @include title;
+      width: auto;
+
+      gap: 1vw;
+
+      hr {
+        width: 2vw;
+      }
+    }
+
+    p {
+      grid-column-start: 1;
+      grid-column-end: 3;
+      font-size: 16px;
+    }
+  
+    .picture-past {
+      height: 190px;
+      text-decoration: none;
+      color: #fff;
+  
+      div {
+        .event-year {
+          font-size: 28px;
+        }
+  
+        .event-description {
+          font-size: 16px;
+        }
+      }
+    }
+  }
+
+  .partners-section {
+    display: none;
+  }
+
+  footer {
+    padding: 5vw 12vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 3vw;
+    background-color: $dark;
+
+    img {
+      height: fit-content;
+      width: 30%;
+    }
+
+    p {
+      font-size: 13px;
+      color: white;
+
+      span {
+        display: initial;
+      }
+    }
   }
 }
