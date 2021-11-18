@@ -147,7 +147,6 @@ body {
   line-height: 35px;
   background-image: url("../images/red-background-for-text.jpeg");
   background-size: cover;
-  background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
 }
