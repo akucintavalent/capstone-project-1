@@ -22,7 +22,7 @@ function showHomeless(homeless) {
   return homelessEl;
 }
 
-function drawMobile() {
+function drawHomelessMobile() {
   homelessList.innerHTML = '';
   for (let i = 0; i < homeless.length; i += 1) {
     const homelessEl = showHomeless(homeless[i]);
@@ -44,14 +44,14 @@ function showRestOfHomeless() {
 
 moreButton.addEventListener('click', showRestOfHomeless);
 
-drawMobile();
+drawHomelessMobile();
 if (window.innerWidth > 768) {
   showRestOfHomeless();
 }
 
 window.onresize = () => {
   if (window.innerWidth < 768) {
-    drawMobile();
+    drawHomelessMobile();
   } else {
     showRestOfHomeless();
   }
