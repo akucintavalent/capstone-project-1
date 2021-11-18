@@ -41,7 +41,7 @@ body {
   list-style-type: none;
 }
 
-.nav-desktop ul li a {
+.upper-link {
   text-decoration: none;
   color: white;
 }
@@ -70,6 +70,8 @@ body {
 
 .nav-link {
   font-size: 35px;
+  text-decoration: none;
+  color: white;
 }
 
 .home-section {
@@ -410,7 +412,7 @@ footer {
 
   .nav-panel li img {
     display: inline-block;
-    margin-right: 15vw;
+    margin-right: auto;
   }
 
   .nav-link {
