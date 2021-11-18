@@ -1,5 +1,6 @@
 @import url(//db.onlinewebfonts.com/c/d14035f6b1afeabafbee4abb2ebf0fc6?family=COCOGOOSE);
 @import url("https://fonts.googleapis.com/css2?family=Inter&family=Lato&display=swap");
+
 *,
 *::before,
 *::after {
@@ -22,7 +23,8 @@ body {
   left: 0;
   top: 0;
 }
-.nav-bar .nav-desktop {
+
+.nav-desktop {
   display: none;
   font-family: "Lato", sans-serif;
   position: fixed;
@@ -32,34 +34,41 @@ body {
   height: 100vh;
   padding: 8vw;
   background-color: #272a31;
-  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0 3px 6px, rgba(0, 0, 0, 0.23) 0 3px 6px;
 }
-.nav-bar .nav-desktop ul {
+
+.nav-desktop ul {
   list-style-type: none;
 }
-.nav-bar .nav-desktop ul li a {
+
+.nav-desktop ul li a {
   text-decoration: none;
   color: white;
 }
-.nav-bar .nav-desktop .close-button {
+
+.close-button {
   color: white;
   font-size: 40px;
 }
-.nav-bar .nav-desktop .upper-panel {
+
+.upper-panel {
   display: flex;
   flex-wrap: wrap;
   gap: 3vw;
   justify-content: flex-end;
 }
-.nav-bar .nav-desktop .nav-panel {
+
+.nav-panel {
   display: flex;
   flex-direction: column;
   gap: 20px;
 }
-.nav-bar .nav-desktop .nav-panel li img {
+
+.nav-panel li img {
   display: none;
 }
-.nav-bar .nav-desktop .nav-panel li a {
+
+.nav-link {
   font-size: 35px;
 }
 
@@ -73,7 +82,8 @@ body {
   width: 100vw;
   height: auto;
 }
-.home-section .large-circle {
+
+.large-circle {
   z-index: 3;
   position: absolute;
   left: 60%;
@@ -86,34 +96,39 @@ body {
   background-size: 25% 25%;
   border-radius: 50%;
 }
-.home-section .zero {
+
+.zero {
   z-index: 2;
   position: absolute;
   right: 5%;
   top: 30%;
 }
-.home-section .money {
+
+.money {
   z-index: 3;
   position: absolute;
   left: 5%;
   bottom: 35%;
   width: 60px;
 }
-.home-section .chess-plane {
+
+.chess-plane {
   z-index: 3;
   position: absolute;
   right: 10%;
   top: 60%;
   width: 120px;
 }
-.home-section .cross {
+
+.cross {
   z-index: 3;
   position: absolute;
   right: 3%;
   top: 50%;
   width: 80px;
 }
-.home-section .home-section-content {
+
+.home-section-content {
   width: 100%;
   height: 100%;
   background-color: rgba(247, 247, 247, 0.822);
@@ -123,7 +138,8 @@ body {
   gap: 10px;
   flex-wrap: wrap;
 }
-.home-section .home-section-content h1 {
+
+.home-section-content h1 {
   z-index: 4;
   font-size: 30px;
   line-height: 35px;
@@ -133,29 +149,35 @@ body {
   -webkit-background-clip: text;
   color: transparent;
 }
-.home-section .home-section-content h1,
-.home-section .home-section-content .period {
+
+.home-section-content h1,
+.period {
   font-family: "COCOGOOSE", sans-serif;
 }
-.home-section .home-section-content .period {
+
+.period {
   z-index: 4;
   font-size: 22px;
 }
-.home-section .home-section-content .greeting {
+
+.greeting {
   z-index: 4;
   color: #ec5242;
 }
-.home-section .home-section-content p {
+
+.home-section-content p {
   font-family: "Lato", sans-serif;
 }
-.home-section .home-section-content .description {
+
+.description {
   z-index: 4;
   background-color: #f1f1f1;
   border: 2px solid white;
   padding: 4%;
   font-size: 13px;
 }
-.home-section .home-section-content .location {
+
+.location {
   z-index: 4;
   font-size: 14px;
 }
@@ -168,27 +190,32 @@ body {
   padding: 10vw 5vw;
   align-items: center;
 }
-.program-section .program-title {
+
+.program-title {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 3vw;
 }
-.program-section .program-title h2 {
+
+.program-title h2 {
   font-family: "Lato", sans-serif;
   font-size: 18px;
   color: white;
 }
-.program-section .program-title hr {
+
+.program-title hr {
   border-color: #ec5242;
   width: 3vw;
 }
+
 .program-section ul {
   display: flex;
   flex-direction: column;
   gap: 5vw;
   width: 100%;
 }
+
 .program-section ul li {
   font-family: "Lato", sans-serif;
   display: flex;
@@ -199,31 +226,36 @@ body {
   align-items: center;
   width: 100%;
 }
-.program-section ul li .program-image {
+
+.program-image {
   min-width: 50px;
   max-width: 50px;
   height: 50px;
 }
+
 .program-section ul li h3 {
   color: #ec5242;
   max-width: 20%;
   min-width: 20%;
 }
+
 .program-section ul li p {
   color: white;
   font-size: 13px;
 }
-.program-section #join {
+
+#join {
   color: white;
   background-color: #ec5242;
   width: 65vw;
   height: 15vw;
   font-family: "Lato", sans-serif;
   font-size: 15px;
-  border-radius: none;
+  border-radius: 0;
   border: none;
 }
-.program-section .see-whole {
+
+.see-whole {
   display: none;
 }
 
@@ -235,59 +267,70 @@ body {
   gap: 10vw;
   font-family: "Lato", sans-serif;
 }
-.participants-section .participants-title {
+
+.participants-title {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 3vw;
 }
+
 .participants-section hr {
   border-color: #ec5242;
   width: 10%;
 }
+
 .participants-section ul {
   display: flex;
   flex-direction: column;
   gap: 5vw;
 }
+
 .participants-section ul li {
   display: grid;
   grid-template-areas: "image name" "image profession" "image hr" "image description";
   grid-column-gap: 5vw;
   grid-row-gap: 1vw;
 }
+
 .participants-section ul li h3 {
   grid-area: name;
 }
-.participants-section ul li .participant-image {
+
+.participant-image {
   grid-area: image;
   object-fit: cover;
   height: 80px;
   min-width: 80px;
   max-width: 80px;
 }
-.participants-section ul li .profession {
+
+.profession {
   grid-area: profession;
   color: #ec5242;
   font-size: 11px;
 }
+
 .participants-section ul li hr {
   border: 1px solid gray;
   height: 0;
   grid-area: hr;
   width: 5vw;
 }
-.participants-section ul li .description {
+
+.description-homeless {
   grid-area: description;
   font-size: 10px;
 }
-.participants-section .more {
+
+.more {
   width: 100%;
   height: 10vw;
   background-color: white;
   border: 1px solid gray;
 }
-.participants-section .more i {
+
+.more i {
   color: #ec5242;
 }
 
@@ -307,13 +350,16 @@ footer {
     width: 100vw;
     font-size: 12px;
   }
-  .nav-bar .close-button {
+
+  .close-button {
     display: none;
   }
-  .nav-bar .nav-mobile {
+
+  .nav-mobile {
     display: none;
   }
-  .nav-bar .nav-desktop {
+
+  .nav-desktop {
     display: block;
     font-family: "Lato", sans-serif;
     position: fixed;
@@ -323,20 +369,24 @@ footer {
     height: auto;
     padding: 0;
   }
-  .nav-bar .nav-desktop .small-logo {
+
+  .small-logo {
     height: 50px;
     display: inline-block;
   }
-  .nav-bar .nav-desktop ul {
+
+  .nav-desktop ul {
     list-style-type: none;
     display: flex;
     flex-direction: row;
     width: 100%;
   }
-  .nav-bar .nav-desktop ul li a {
+
+  .nav-desktop ul li a {
     text-decoration: none;
   }
-  .nav-bar .nav-desktop .upper-panel {
+
+  .upper-panel {
     background: linear-gradient(#363636, #505050);
     padding-right: 12vw;
     justify-content: flex-end;
@@ -344,10 +394,12 @@ footer {
     padding-top: 0.5vw;
     padding-bottom: 0.5vw;
   }
-  .nav-bar .nav-desktop .upper-panel li a {
+
+  .upper-link {
     color: white;
   }
-  .nav-bar .nav-desktop .nav-panel {
+
+  .nav-panel {
     flex-direction: row;
     background-color: white;
     padding-right: 12vw;
@@ -355,80 +407,97 @@ footer {
     justify-content: space-between;
     align-items: center;
   }
-  .nav-bar .nav-desktop .nav-panel li img {
+
+  .nav-panel li img {
     display: inline-block;
     margin-right: 15vw;
   }
-  .nav-bar .nav-desktop .nav-panel li a {
+
+  .nav-link {
     color: black;
     font-size: 15px;
   }
-  .nav-bar .nav-desktop .nav-panel li:nth-child(2) a {
+
+  .nav-panel li:nth-child(2) a {
     color: #ec5242;
   }
-  .nav-bar .nav-desktop .nav-panel li:last-child {
+
+  .nav-panel li:last-child {
     min-width: 115px;
   }
-  .nav-bar .nav-desktop .nav-panel li:last-child a {
+
+  .nav-panel li:last-child a {
     border: 4px solid #ec5242;
     padding: 0.6vw;
     color: #ec5242;
   }
 
-  .home-section .home-section-content {
+  .home-section-content {
     padding: 12vw;
     padding-top: 14vw;
   }
-  .home-section .home-section-content .greeting {
+
+  .greeting {
     font-size: 50px;
   }
-  .home-section .home-section-content h1 {
+
+  .home-section-content h1 {
     font-size: 70px;
     line-height: 80px;
   }
-  .home-section .home-section-content .description {
+
+  .description {
     width: 50vw;
     padding: 2vw;
     font-size: 15px;
   }
-  .home-section .home-section-content .period {
+
+  .period {
     font-size: 35px;
   }
-  .home-section .home-section-content .location {
+
+  .location {
     font-size: 23px;
   }
 
   .program-section {
     padding: 5vw;
   }
-  .program-section .program-title {
+
+  .program-title {
     gap: 1vw;
   }
-  .program-section .program-title h2 {
+
+  .program-title h2 {
     font-size: 30px;
   }
+
   .program-section ul {
     flex-direction: row;
     flex-wrap: wrap;
     gap: 4px;
     width: auto;
   }
-  .program-section ul li {
+
+  #program ul li {
     flex-direction: column;
     width: 15vw;
     gap: 2px;
     padding: 15px;
     text-align: center;
   }
+
   .program-section ul li h3 {
     max-width: none;
-    min-width: none;
+    min-width: 0;
     width: auto;
   }
-  .program-section #join {
+
+  #join {
     display: none;
   }
-  .program-section .see-whole {
+
+  .see-whole {
     display: initial;
     color: #cacaca;
   }
@@ -437,34 +506,42 @@ footer {
     padding: 5vw 15vw;
     gap: 5vw;
   }
-  .participants-section .participants-title {
+
+  .participants-title {
     gap: 1vw;
   }
-  .participants-section .participants-title h2 {
+
+  .participants-title-text {
     font-size: 30px;
   }
+
   .participants-section ul {
     display: grid;
     grid-template-columns: 1fr 1fr;
     row-gap: 4vw;
     column-gap: 1vw;
   }
-  .participants-section ul li {
+
+  #participants ul li {
     column-gap: 2vw;
   }
-  .participants-section ul li .participant-image {
+
+  .participant-image {
     height: 130px;
     min-width: 130px;
     max-width: 130px;
   }
+
   .participants-section ul li h3 {
     font-size: 22px;
   }
-  .participants-section ul li .profession,
-.participants-section ul li .description {
+
+  .profession,
+  .description {
     font-size: 15px;
   }
-  .participants-section .more {
+
+  .more {
     display: none;
   }
 
@@ -479,22 +556,26 @@ footer {
     gap: 3vw;
     background-color: #585858;
   }
-  .partners-section .partners-title {
+
+  .partners-title {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 1vw;
   }
-  .partners-section .partners-title h2 {
+
+  .partners-title-text {
     font-size: 30px;
     color: white;
   }
-  .partners-section .partners-title hr {
+
+  .partners-title hr {
     border: 1px solid #ec5242;
     width: 50%;
   }
-  .partners-section .logos {
+
+  .logos {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -502,9 +583,9 @@ footer {
     column-gap: 5%;
     row-gap: 20px;
   }
-  .partners-section .logos img {
+
+  .logos-img {
     width: 10%;
-    height: fit-content;
   }
 
   footer {
@@ -514,13 +595,13 @@ footer {
     align-items: center;
     gap: 3vw;
   }
-  footer img {
-    height: fit-content;
+
+  .footer-image {
+    /* height: fit-content; */
     width: 30%;
   }
-  footer p {
+
+  .footer-text {
     font-size: 13px;
   }
 }
-
-/*# sourceMappingURL=index.css.map */

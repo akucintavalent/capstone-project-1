@@ -9,7 +9,7 @@ function showHomeless(homeless) {
   const img = homelessEl.querySelector('img');
   const h3 = homelessEl.querySelector('h3');
   const profession = homelessEl.querySelector('p.profession');
-  const description = homelessEl.querySelector('p.description');
+  const description = homelessEl.querySelector('p.description-homeless');
 
   img.setAttribute('src', homeless.image.path);
   img.setAttribute('alt', homeless.image.alt);
