@@ -1,5 +1,6 @@
 @import url(//db.onlinewebfonts.com/c/d14035f6b1afeabafbee4abb2ebf0fc6?family=COCOGOOSE);
 @import url("https://fonts.googleapis.com/css2?family=Inter&family=Lato&display=swap");
+
 *,
 *::before,
 *::after {
@@ -22,7 +23,8 @@ body {
   left: 0;
   top: 0;
 }
-.nav-bar .nav-desktop {
+
+.nav-desktop {
   display: none;
   font-family: "Lato", sans-serif;
   position: fixed;
@@ -32,34 +34,41 @@ body {
   height: 100vh;
   padding: 8vw;
   background-color: #272a31;
-  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0 3px 6px, rgba(0, 0, 0, 0.23) 0 3px 6px;
 }
-.nav-bar .nav-desktop ul {
+
+.nav-desktop ul {
   list-style-type: none;
 }
-.nav-bar .nav-desktop ul li a {
+
+.upper-link {
   text-decoration: none;
   color: white;
 }
-.nav-bar .nav-desktop .close-button {
+
+.close-button {
   color: white;
   font-size: 40px;
 }
-.nav-bar .nav-desktop .upper-panel {
+
+.upper-panel {
   display: flex;
   flex-wrap: wrap;
   gap: 3vw;
   justify-content: flex-end;
 }
-.nav-bar .nav-desktop .nav-panel {
+
+.nav-panel {
   display: flex;
   flex-direction: column;
   gap: 20px;
 }
-.nav-bar .nav-desktop .nav-panel li img {
+
+.small-logo {
   display: none;
 }
-.nav-bar .nav-desktop .nav-panel li a {
+
+.nav-link {
   font-size: 35px;
 }
 
@@ -68,7 +77,8 @@ body {
   width: 100vw;
   height: auto;
 }
-.home-section .large-circle {
+
+.large-circle {
   z-index: 1;
   position: absolute;
   left: 60%;
@@ -81,28 +91,32 @@ body {
   background-size: 25% 25%;
   border-radius: 50%;
 }
-.home-section .red-circle {
+
+.red-circle {
   z-index: 1;
   position: absolute;
   left: 30%;
   top: 15%;
   width: 100px;
 }
-.home-section .silver-circle-1 {
+
+.silver-circle-1 {
   z-index: 1;
   position: absolute;
   left: 15%;
   top: 30%;
   width: 80px;
 }
-.home-section .silver-circle-2 {
+
+.silver-circle-2 {
   z-index: 1;
   position: absolute;
   left: 80%;
   top: 40%;
   width: 130px;
 }
-.home-section .home-section-content {
+
+.home-section-content {
   width: 100%;
   height: 100%;
   background-color: rgba(247, 247, 247, 0.822);
@@ -113,38 +127,42 @@ body {
   gap: 20px;
   flex-wrap: wrap;
 }
-.home-section .home-section-content h1 {
+
+.home-section-content h1 {
   z-index: 2;
   font-size: 28px;
   line-height: 35px;
   text-align: center;
   font-family: "COCOGOOSE", sans-serif;
 }
-.home-section .home-section-content hr {
+
+.home-section-content hr {
   display: none;
 }
-.home-section .home-section-content h1,
-.home-section .home-section-content .greeting {
+
+.home-section-content h1,
+.greeting {
   color: #ec5242;
 }
-.home-section .home-section-content p {
+
+.home-section-content p {
   font-family: "Lato", sans-serif;
   text-align: center;
 }
-.home-section .home-section-content .description {
+
+.description {
   z-index: 2;
   background-color: white;
   border: 1px solid #e4e4e4;
   padding: 4%;
   font-size: 13px;
 }
-.home-section .home-section-content .description span {
-  display: none;
-}
-.home-section .home-section-content .contact {
+
+.contact {
   font-size: 13px;
 }
-.home-section .home-section-content .contact a {
+
+.mail-link {
   color: black;
 }
 
@@ -159,25 +177,30 @@ body {
   gap: 7vw;
   border-bottom: 1px solid #e4e4e4;
 }
-.logo-section .logo-title {
+
+.logo-title {
   width: 80%;
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 3vw;
 }
-.logo-section .logo-title hr {
+
+.logo-title hr {
   width: 10%;
   border-color: #ec5242;
 }
+
 .logo-section p {
   font-size: 13px;
   width: 87%;
 }
-.logo-section p span {
+
+.logo-text-disappear {
   display: none;
 }
-.logo-section img {
+
+.logo-img {
   width: 100%;
   border: 1px solid #e4e4e4;
 }
@@ -192,25 +215,29 @@ body {
   align-items: center;
   gap: 7vw;
 }
-.past-events-section .past-events-title {
-  width: 80%;
+
+.past-events-title {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 3vw;
   width: 90%;
 }
-.past-events-section .past-events-title hr {
+
+.past-events-title hr {
   width: 10%;
   border-color: #ec5242;
 }
-.past-events-section #event-2013 {
+
+#event-2013 {
   background-image: url("../images/past-event-1.jpeg");
 }
-.past-events-section #event-2011 {
+
+#event-2011 {
   background-image: url("../images/past-event-2.jpeg");
 }
-.past-events-section .picture-past {
+
+.picture-past {
   background-repeat: no-repeat;
   background-position: top center;
   background-size: 100% auto;
@@ -219,7 +246,8 @@ body {
   text-decoration: none;
   color: #fff;
 }
-.past-events-section .picture-past div {
+
+.picture-past div {
   background-color: rgba(165, 42, 42, 0.692);
   width: 100%;
   height: 100%;
@@ -229,11 +257,13 @@ body {
   justify-content: center;
   gap: 10px;
 }
-.past-events-section .picture-past div .event-year {
+
+.event-year {
   font-size: 25px;
   font-weight: bold;
 }
-.past-events-section .picture-past div .event-description {
+
+.event-description {
   font-size: 13px;
 }
 
@@ -248,8 +278,8 @@ body {
   gap: 7vw;
   background-color: #585858;
 }
-.partners-section .partners-title {
-  width: 80%;
+
+.partners-title {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -257,14 +287,13 @@ body {
   width: auto;
   color: white;
 }
-.partners-section .partners-title hr {
-  width: 10%;
+
+.partners-title hr {
+  width: 40%;
   border-color: #ec5242;
 }
-.partners-section .partners-title hr {
-  width: 40%;
-}
-.partners-section .logos {
+
+.logos {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -272,9 +301,11 @@ body {
   column-gap: 5%;
   row-gap: 20px;
 }
-.partners-section .logos img {
+
+.logos img {
   width: 30%;
-  height: fit-content;
+
+  /* height: fit-content; */
 }
 
 footer {
@@ -283,16 +314,19 @@ footer {
   padding: 5vw;
   font-family: "Lato", sans-serif;
 }
-footer img {
+
+.footer-image {
   width: 100%;
   align-self: center;
 }
-footer p {
+
+.footer-text {
   font-size: 10px;
   justify-self: center;
   align-self: center;
 }
-footer p span {
+
+.footer-text-disappear {
   display: none;
 }
 
@@ -304,13 +338,16 @@ footer p span {
     width: 100vw;
     font-size: 12px;
   }
-  .nav-bar .close-button {
+
+  .close-button {
     display: none;
   }
-  .nav-bar .nav-mobile {
+
+  .nav-mobile {
     display: none;
   }
-  .nav-bar .nav-desktop {
+
+  .nav-desktop {
     display: block;
     font-family: "Lato", sans-serif;
     position: fixed;
@@ -320,20 +357,24 @@ footer p span {
     height: auto;
     padding: 0;
   }
-  .nav-bar .nav-desktop .small-logo {
+
+  .small-logo {
     height: 50px;
     display: inline-block;
   }
-  .nav-bar .nav-desktop ul {
+
+  .nav-desktop ul {
     list-style-type: none;
     display: flex;
     flex-direction: row;
     width: 100%;
   }
-  .nav-bar .nav-desktop ul li a {
+
+  .nav-desktop ul li a {
     text-decoration: none;
   }
-  .nav-bar .nav-desktop .upper-panel {
+
+  .upper-panel {
     background: linear-gradient(#363636, #505050);
     padding-right: 12vw;
     justify-content: flex-end;
@@ -341,10 +382,12 @@ footer p span {
     padding-top: 0.5vw;
     padding-bottom: 0.5vw;
   }
-  .nav-bar .nav-desktop .upper-panel li a {
+
+  .upper-link {
     color: white;
   }
-  .nav-bar .nav-desktop .nav-panel {
+
+  .nav-panel {
     flex-direction: row;
     background-color: white;
     padding-right: 12vw;
@@ -352,53 +395,65 @@ footer p span {
     justify-content: space-between;
     align-items: center;
   }
-  .nav-bar .nav-desktop .nav-panel li img {
+
+  .nav-panel li img {
     display: inline-block;
-    margin-right: 15vw;
+    margin-right: auto;
   }
-  .nav-bar .nav-desktop .nav-panel li a {
+
+  .nav-link {
     color: black;
     font-size: 15px;
   }
-  .nav-bar .nav-desktop .nav-panel li:nth-child(2) a {
+
+  .nav-panel li:nth-child(2) a {
     color: #ec5242;
   }
-  .nav-bar .nav-desktop .nav-panel li:last-child {
+
+  .nav-panel li:last-child {
     min-width: 115px;
   }
-  .nav-bar .nav-desktop .nav-panel li:last-child a {
+
+  .nav-panel li:last-child a {
     border: 4px solid #ec5242;
     padding: 0.6vw;
     color: #ec5242;
   }
 
-  .home-section .home-section-content {
+  .home-section-content {
     padding: 15vw 15vw 8vw 15vw;
     gap: 3vw;
   }
-  .home-section .home-section-content h1 {
+
+  .home-section-content h1 {
     font-size: 55px;
     line-height: 60px;
   }
-  .home-section .home-section-content hr {
+
+  .home-section-content hr {
     display: block;
     border: 1px solid #ec5242;
     width: 2vw;
   }
-  .home-section .home-section-content .greeting {
+
+  .greeting {
     display: none;
   }
-  .home-section .home-section-content .description {
+
+  .description {
     padding: 2vw 4vw;
     font-size: 16px;
   }
-  .home-section .home-section-content .description span {
+
+  .description span {
     display: initial;
   }
-  .home-section .home-section-content .contact {
+
+  .contact {
     font-size: 16px;
   }
-  .home-section .home-section-content .contact a {
+
+  .mail-link {
     color: black;
     font-weight: bold;
   }
@@ -407,7 +462,8 @@ footer p span {
     padding: 5vw 10vw;
     gap: 4vw;
   }
-  .logo-section .logo-title {
+
+  .logo-title {
     width: 80%;
     display: flex;
     flex-direction: column;
@@ -415,21 +471,22 @@ footer p span {
     gap: 3vw;
     gap: 1vw;
   }
-  .logo-section .logo-title hr {
-    width: 10%;
+
+  .logo-title hr {
+    width: 2vw;
     border-color: #ec5242;
   }
-  .logo-section .logo-title hr {
-    width: 2vw;
-  }
+
   .logo-section p {
     font-size: 16px;
     width: auto;
   }
+
   .logo-section p span {
     display: initial;
   }
-  .logo-section img {
+
+  .logo-img {
     width: 55%;
   }
 
@@ -440,38 +497,39 @@ footer p span {
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
-  .past-events-section .past-events-title {
+
+  .past-events-title {
     grid-column-start: 1;
     grid-column-end: 3;
-    width: 80%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 3vw;
     width: auto;
     gap: 1vw;
   }
-  .past-events-section .past-events-title hr {
+
+  .past-events-title hr {
     width: 10%;
     border-color: #ec5242;
   }
-  .past-events-section .past-events-title hr {
-    width: 2vw;
-  }
+
   .past-events-section p {
     grid-column-start: 1;
     grid-column-end: 3;
     font-size: 16px;
   }
-  .past-events-section .picture-past {
+
+  .picture-past {
     height: 190px;
     text-decoration: none;
     color: #fff;
   }
-  .past-events-section .picture-past div .event-year {
+
+  .event-year {
     font-size: 28px;
   }
-  .past-events-section .picture-past div .event-description {
+
+  .event-description {
     font-size: 16px;
   }
 
@@ -487,17 +545,18 @@ footer p span {
     gap: 3vw;
     background-color: #272a31;
   }
-  footer img {
-    height: fit-content;
+
+  .footer-image {
+    /* height: fit-content; */
     width: 30%;
   }
-  footer p {
+
+  .footer-text {
     font-size: 13px;
     color: white;
   }
-  footer p span {
+
+  .footer-text-disappear {
     display: initial;
   }
 }
-
-/*# sourceMappingURL=about.css.map */
