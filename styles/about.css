@@ -306,8 +306,6 @@ body {
 
 .logos img {
   width: 30%;
-
-  /* height: fit-content; */
 }
 
 footer {
@@ -549,7 +547,6 @@ footer {
   }
 
   .footer-image {
-    /* height: fit-content; */
     width: 30%;
   }
 
