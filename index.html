@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CC Global Summit 2015</title>
+  <link rel="stylesheet" href="./styles/index.css">
+  <script src="https://kit.fontawesome.com/c4f9b857f0.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <header class="nav-bar">
+    <nav class="nav-mobile">
+      <i class="fas fa-bars fa-2x"></i>
+    </nav>
+    <nav class="nav-desktop">
+      <a class="close-button">&times;</a>
+      <ul class="upper-panel">
+        <li><a class="upper-link" href="#"><i class="fab fa-facebook-f"></i></a></li>
+        <li><a class="upper-link" href="#"><i class="fab fa-twitter"></i></a></li>
+        <li><a class="upper-link" href="#">English</a></li>
+        <li><a class="upper-link" href="#">My Page</a></li>
+        <li><a class="upper-link" href="#">Logout</a></li>
+      </ul>
+      <ul class="nav-panel">
+        <li><a class="nav-link" href="./index.html"><img class="small-logo" src="images/dan_kuczynski_logo.png" alt="CC Global Summit 2015"></a></li>
+        <li><a class="nav-link" href="./html/about.html">About</a></li>
+        <li><a class="nav-link" href="#">Program</a></li>
+        <li><a class="nav-link" href="#">Join</a></li>
+        <li><a class="nav-link" href="#">Sponsor</a></li>
+        <li><a class="nav-link" href="#">News</a></li>
+        <li><a class="nav-link" href="./index.html">Campaign</a></li>
+      </ul>
+    </nav>
+  </header>
+  <section id="home" class="home-section">
+    <div class="large-circle"></div>
+    <img class="zero" src="./images/zero.png" alt="">
+    <img class="money" src="./images/money-1.png" alt="">
+    <img class="chess-plane" src="./images/chess-plane.png" alt="">
+    <img class="cross" src="./images/cross.png" alt="">
+    <div class="home-section-content">
+      <p class="greeting">
+        "Hello, kind person!"
+      </p>
+      <h1>
+        PLATFORM FOR GOOD PEOPLE THAT WANT TO HELP THE HOMELESS
+      </h1>
+      <p class="description">
+        If you have the desire to help the poor and the needy, especially homeless, you want to share some food, clothing, money, give a shelter, then this page is for you!
+      </p>
+      <p class="period">
+        DONATE FOR THIS PROJECT <a href="#">HERE</a>
+      </p>
+      <p class="location">
+        Our office is located at ul. Piastowska 1, Wrocław, Poland
+      </p>
+    </div>
+  </section>
+  <section id="program" class="program-section">
+    <div class="program-title">
+      <h2>
+        Means of help
+      </h2>
+      <hr>
+    </div>
+    <ul>
+      <li>
+        <img class="program-image" src="./images/donate_food.png" alt="Donate food">
+        <h3>Donate food</h3>
+        <p>You can contribute to preparing meals for the needy.</p>
+      </li>
+      <li>
+        <img class="program-image" src="./images/donate_money.png" alt="Donate money">
+        <h3>Donate money</h3>
+        <p>Each and every donated dollar will be spent or given to the homeless.</p>
+      </li>
+      <li>
+        <img class="program-image" src="./images/donate_clothes.png" alt="Donate clothes">
+        <h3>Donate clothes</h3>
+        <p>Homeless people are in great need of clothes especially during winter.</p>
+      </li>
+      <li>
+        <img class="program-image" src="./images/give_shelter.png" alt="Give shelter">
+        <h3>Give shelter</h3>
+        <p>The most obvious thing that homeless people neeed is home. You can share yours.</p>
+      </li>
+    </ul>
+    <button id="join">Contribute</button>
+    <a class="see-whole" href="#">SEE THE WHOLE PROGRAM</a>
+  </section>
+  <section id="participants" class="participants-section">
+    <div class="participants-title">
+      <h2 class="participants-title-text">
+        The needy
+      </h2>
+      <hr>
+    </div>
+    <ul>
+      <li>
+        <img class="participant-image" src="./images/clouds.jpeg" alt="Homeless man 1">
+        <h3>Ablah Bablah</h3>
+        <p class="profession">Here should be the profession</p>
+        <hr>
+        <p class="description-homeless">This long description is meant to give you information about the situation of this person and why he or she cannot find a job or work.</p>
+      </li>
+    </ul>
+    <button class="more">
+      MORE <i class="fas fa-angle-down"></i>
+    </button>
+  </section>
+  <section id="partners" class="partners-section">
+    <div class="partners-title">
+      <h2 class="partners-title-text">Partners</h2>
+      <hr>
+    </div>
+    <div class="logos">
+      <img class="logos-img" src="./images/mozilla.png" alt="Mozilla logo">
+      <img class="logos-img" src="./images/google.png" alt="Google logo">
+      <img class="logos-img" src="./images/naver.png" alt="Naver logo">
+      <img class="logos-img" src="./images/daumkakao.png" alt="Daumkakao logo">
+      <img class="logos-img" src="./images/airbnb.png" alt="Airbnb logo">
+    </div>
+  </section>
+  <footer>
+    <img class="footer-image" src="./images/cc-korea-logo.jpeg" alt="CC Korea logo">
+    <p class="footer-text">
+      2015 Creative Commons Korea. Some rights reserved. <br><br>
+      달리 정하지 앉은 웹사이트의 오든 내용은 크리에이티브 커언즈 저각자표시 20 대한인국 라이선스에 따라 이용할 수 있습니다 자새한 이용기뇽 내용과 허락조건은 http://creativecommons.org/licences/by/2.0/kr 룔 보서I요． 
+    </p>
+  </footer>
+  <script type="module" src="js/fill-homeless-list.js"></script>
+  <script src="js/nav-mobile.js"></script>
+</body>
+</html>
